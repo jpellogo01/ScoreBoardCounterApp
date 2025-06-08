@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board</title>
+    <link rel="stylesheet" href="scoreboard.css">
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/cursed-timer-ulil">
+</head>
+<body>
+    
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="nav-logo"><img src="/image/basketball-g23d1dc8b2_1280.png"></a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sports</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#">Basketball</a></li>
+                            <li><a href="#">Volleyball</a></li>
+                            <li><a href="#">Football</a></li>
+                            <li><a href="#">Baseball</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Help</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>                                                                                                              
+    </header>
+
+    <main>
+
+    <div class="scoreboard-grid">
+        
+        <div class="team-grid">
+                <div class="team" contenteditable="">Home</div>
+                <div class="score"><h1 id = "count-left">0</h1></div>
+            <div class="btns">
+                <button id = "decrementOneL" onclick="decrementOneL()">-1</button>
+                <button id = "incrementOneL" onclick="incrementOneL()">+1</button>
+                <button id = "incrementTwoL" onclick="incrementTwoL()">+2</button>
+                <button id = "incrementThreeL" onclick="incrementThreeL()">+3</button>
+            </div>
+        </div>
+
+        <div class="team-grid">
+                <div class="team" contenteditable="">Guest</div>
+                <div class="score"><h1 id = "count-right">0</h1></div>
+            <div class="btns">
+                <button id = "decrementOneR" onclick="decrementOneR()">-1</button>
+                <button id = "incrementOneR" onclick="incrementOneR()">+1</button>
+                <button id = "incrementTwoR" onclick="incrementTwoR()">+2</button>
+                <button id = "incrementThreeR" onclick="incrementThreeR()">+3</button>
+            </div>
+        </div>
+
+        
+    </div>
+
+</main>s
+
+    
+    <script src="/scoreboard.js"></script>
+</body>
+</html>
